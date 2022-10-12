@@ -1,0 +1,22 @@
+.container {
+    display: grid;
+    grid-template-rows: 3fr;
+    justify-content: center;
+}
+
+h1 {
+    justify-self: center;
+}
+
+p {
+    justify-self: center;
+}
+
+button {
+    justify-self: center;
+    width: 100px;
+}
+
+img {
+    display: none;
+}
