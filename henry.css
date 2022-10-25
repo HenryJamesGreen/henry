@@ -1,22 +1,43 @@
 .container {
     display: grid;
-    grid-template-rows: 3fr;
+    grid-template-rows: 4fr 1/4 1/4 1/4 1/4;
     justify-content: center;
+    Background: rgb(170, 255, 0);
+    height: 200vh;
+    width: 100vw;
 }
 
 h1 {
     justify-self: center;
+    font-style: italic;
 }
 
+h2 {
+    justify-self: center;
+    font-size: 200px;
+}
 p {
     justify-self: center;
 }
 
 button {
     justify-self: center;
+    background-color: aqua;
+    border: 2px solid white;
     width: 100px;
+    height: 100px;
+}
+
+.btn1 {
+    background-color: antiquewhite;
+}
+
+.btn2 {
+    background-color: aqua;
 }
 
 img {
     display: none;
+    justify-self: center;
 }
+
