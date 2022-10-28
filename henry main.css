@@ -3,7 +3,7 @@
   height: 100vh;
   width: 100%;
   display: grid;
-  grid-template-rows: 15% 65% 10% 10%;
+  grid-template-rows: 5% 5% 20% 10% 10% 10% 20%;
   grid-template-columns: 20% 20% 20% 20% 20%;
   justify-content: center;
 }
@@ -23,50 +23,44 @@
   opacity: 0.5;
 }
 
-h1 {
+header {
   justify-self: center;
   grid-column-start: 1;
   grid-column-end: 6;
   font-style: italic;
-  font-size: 100px;
+  font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
-  text-shadow: 2px 2px #010101;
+  text-shadow: 0.25px 0.25px #010101;
 }
 
-h2 {
+li {
+  justify-self: center;
+  grid-column-start: 4;
+  grid-column-end: 6;
+}
+
+h1 {
   justify-self: center;
   grid-column-start: 1;
   grid-column-end: 6;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  font-size: 50px;
-  font-style: normal;
+  grid-row-start: 3;
+  font-style: italic;
+  font-size: 75px;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   text-shadow: 2px 2px #010101;
 }
 
-iframe {
-  position: absolute;
-  margin: auto;
-  grid-row-start: 2;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-button {
+p1 {
   justify-self: center;
-  background-color: white;
-  border: 2px solid black;
   grid-column-start: 2;
-  width: 100px;
-  height: 100px;
-}
-
-.btn1 {
-  justify-self: center;
-  grid-column-start: 3;
-  grid-column-end: 4;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  font-style: italic;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: white;
+  text-shadow: 0.25px 0.25px #010101;
 }
