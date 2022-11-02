@@ -25,8 +25,9 @@
 
 header {
   justify-self: center;
-  grid-column-start: 1;
-  grid-column-end: 6;
+  position: absolute;
+  grid-column-start: 2;
+  grid-column-end: 5;
   font-style: italic;
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
@@ -35,9 +36,9 @@ header {
 }
 
 ul {
-  display: inline-block;
+  display: block;
+  text-align: center;
   list-style-type: none;
-  justify-self: center;
   position: absolute;
   top: 7.5%;
   left: 50%;
@@ -65,10 +66,12 @@ li a:hover {
 
 h1 {
   justify-self: center;
-  grid-column-start: 1;
-  grid-column-end: 6;
-  grid-row-start: 3;
-  font-style: italic;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  font-style: normal;
   font-size: 75px;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
@@ -77,13 +80,61 @@ h1 {
 
 p1 {
   justify-self: center;
-  grid-column-start: 2;
-  grid-column-end: 5;
+  position: absolute;
+  text-align: center;
   grid-row-start: 4;
-  font-style: italic;
+  font-style: normal;
   font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
   color: white;
   text-shadow: 0.25px 0.25px #010101;
+}
+
+icons {
+  text-align: center;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 2vw;
+  text-align: center;
+  text-decoration: none;
+  margin: 20px auto;
+  border-radius: 50%;
+}
+.fa-facebook {
+  justify-self: center;
+  background: #3b5998;
+  color: white;
+  position: absolute;
+  top: 90%;
+  left: 65vw;
+}
+
+.fa-twitter {
+  justify-self: center;
+  background: #55acee;
+  color: white;
+  position: absolute;
+  top: 90%;
+  left: 55vw;
+}
+
+.fa-youtube {
+  justify-self: center;
+  background: #bb0000;
+  color: white;
+  position: absolute;
+  top: 90%;
+  left: 45vw;
+}
+
+.fa-instagram {
+  justify-self: center;
+  background: #125688;
+  color: white;
+  position: absolute;
+  top: 90%;
+  left: 35vw;
 }
