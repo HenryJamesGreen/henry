@@ -1,3 +1,10 @@
+body {
+  background: url(images/me.JPG);
+  filter: brightness(80%);
+  background-position: center;
+  background-size: cover;
+}
+
 .container {
   position: relative;
   height: 100vh;
@@ -10,9 +17,6 @@
 
 .container::before {
   content: "";
-  background: url("images/me.JPG");
-  background-color: black;
-  filter: brightness(80%);
   z-index: -1;
   background-size: cover;
   position: absolute;
@@ -90,6 +94,22 @@ p1 {
   text-shadow: 0.25px 0.25px #010101;
 }
 
+.footer {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 2fr 1fr;
+  min-height: 100px;
+  background: rgba(4, 4, 4, 0.5);
+}
+
+.icons {
+  grid-column-start: 2;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+/* 
 icons {
   text-align: center;
 }
@@ -137,4 +157,4 @@ icons {
   position: absolute;
   top: 90%;
   left: 35vw;
-}
+} */
