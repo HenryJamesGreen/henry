@@ -10,26 +10,22 @@ body {
   height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-rows: 5% 5% 20% 10% 10% 10% 20%;
+  grid-template-rows: 5% 7.5% 17.5% 10% 10% 10% 20%;
   grid-template-columns: 20% 20% 20% 20% 20%;
   justify-content: center;
 }
 
-.container::before {
-  content: "";
-  z-index: -1;
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.5;
+.content {
+  height: 100vh;
+  width: 60vw;
+  align-items: center;
+  margin-left: 20vw;
+  background-color: rgba(4, 4, 4, 0.75);
 }
 
 header {
   justify-self: center;
-  position: absolute;
+  position: relative;
   grid-column-start: 2;
   grid-column-end: 5;
   font-style: italic;
@@ -39,18 +35,31 @@ header {
   text-shadow: 0.25px 0.25px #010101;
 }
 
-ul {
-  display: block;
-  text-align: center;
-  list-style-type: none;
-  position: absolute;
-  top: 7.5%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
+nav {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 6;
 }
 
-li {
+.ul {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 3fr 1fr;
+  min-height: 100px;
+  background: rgba(4, 4, 4, 0);
+}
+
+.menu {
+  grid-column-start: 2;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;
+  background: rgba(4, 4, 4, 0.7);
+}
+
+.li {
   float: left;
 }
 
@@ -70,11 +79,9 @@ li a:hover {
 
 h1 {
   justify-self: center;
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  grid-column-start: 3;
+  grid-row-start: 3;
   font-style: normal;
   font-size: 75px;
   font-family: Arial, Helvetica, sans-serif;
@@ -84,9 +91,12 @@ h1 {
 
 p1 {
   justify-self: center;
-  position: absolute;
+  position: relative;
   text-align: center;
   grid-row-start: 4;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  align-items: center;
   font-style: normal;
   font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
@@ -99,7 +109,7 @@ p1 {
   width: 100%;
   grid-template-columns: 1fr 2fr 1fr;
   min-height: 100px;
-  background: rgba(4, 4, 4, 0.5);
+  background: rgba(4, 4, 4, 0.75);
 }
 
 .icons {
@@ -109,6 +119,12 @@ p1 {
   justify-items: center;
   align-items: center;
 }
+
+a:hover {
+  background-color: #555;
+  color: white;
+}
+
 /* 
 icons {
   text-align: center;
