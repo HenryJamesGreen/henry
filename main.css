@@ -1,8 +1,6 @@
 body {
-  background: url(images/me.JPG);
+  background: url(images/me.JPG) center no-repeat;
   filter: brightness(80%);
-  background-position: center;
-  background-size: cover;
 }
 
 .container {
